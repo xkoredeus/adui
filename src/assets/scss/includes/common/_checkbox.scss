@@ -95,6 +95,12 @@
     user-select: none; /* Standard syntax */
     border: 1px solid $white;
 
+    @include r($breakpoint-2) {
+      font-size: 18px;
+      gap: 7px;
+      padding: 19px 11px;
+    }
+
     &::before {
       @include ovl;
       @include gradient-light-green;

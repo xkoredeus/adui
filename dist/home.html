@@ -126,10 +126,16 @@
             <div class="header">
                 <div class="container">
                     <div class="header-in">
-                        <span class="header-logo">
-                            <img src="assets/img/logo.png" alt="Logo">
-                            <span class="header-logo__text">Помощник по <br> найму сотрудников <br> 24/7</span>
-                        </span>
+                        <div class="header-left">
+                            <button class="burger js-toggle-menu">
+                                <svg width="15" height="12"><use xlink:href="#burger"></use></svg>
+                                <svg width="14" height="14"><use xlink:href="#cross"></use></svg>
+                            </button>
+                            <span class="header-logo">
+                                <img src="assets/img/logo.png" alt="Logo">
+                                <span class="header-logo__text">Помощник по <br> найму сотрудников <br> 24/7</span>
+                            </span>
+                        </div>
             
                         <div class="header-nav">
                             <a href="#" class="header-nav__link js-button-anchor" data-to="#offer">Главная</a>
@@ -154,7 +160,7 @@
                 <div class="offer-in">
                     <div class="title-h1 title-mb-3 font-Bold">АДИУ</div>
                     <div class="title-h3 title-mb-0">
-                        Улучшаем качество рекрутинга и снижаем <br> время на найм в 3 раза
+                        Улучшаем качество рекрутинга и снижаем <br class="d-none d-xl-inline"> время на найм в &nbsp;3 раза
                     </div>
                     <button class="button" data-src="#popup-call" data-fancybox><span>Начать работу с помощником</span></button>
                 </div>
@@ -261,7 +267,7 @@
             </div>
         </section>
         
-        <section class="section-pd-1 cv" id="steps" style="background-image: url('assets/img/work-bg.jpg');">
+        <section class="section-pd-1 cv works" id="steps" style="background-image: url('assets/img/work-bg.jpg');">
             <div class="container">
                 <div class="section-title">
                     <svg class="effect__title-decor" width="62" height="62">
@@ -277,6 +283,7 @@
                         <div class="row">
                             <!--item-->
                             <div class="col-lg-4 work-item__wrapper">
+                                <svg class="work-item__line"><use xlink:href="#work-line"></use></svg>
                                 <div class="work-item">
                                     <div class="work-item__number">01</div>
                                     <div class="work-item__top">
@@ -290,7 +297,8 @@
                                 </div>
                             </div>
                             <!--item-->
-                            <div class="col-lg-4 work-item__wrapper d-flex justify-content-center">
+                            <div class="col-lg-4 work-item__wrapper d-xl-flex justify-content-xl-center">
+                                <svg class="work-item__line"><use xlink:href="#work-line"></use></svg>
                                 <div class="work-item">
                                     <div class="work-item__number">02</div>
                                     <div class="work-item__top">
@@ -304,7 +312,8 @@
                                 </div>
                             </div>
                             <!--item-->
-                            <div class="col-lg-4 work-item__wrapper d-flex justify-content-end">
+                            <div class="col-lg-4 work-item__wrapper d-xl-flex justify-content-xl-end">
+                                <svg class="work-item__line"><use xlink:href="#work-line"></use></svg>
                                 <div class="work-item">
                                     <div class="work-item__number">03</div>
                                     <div class="work-item__top">
@@ -326,6 +335,7 @@
                         <div class="row">
                             <!--item-->
                             <div class="col-lg-4 work-item__wrapper">
+                                <svg class="work-item__line"><use xlink:href="#work-line"></use></svg>
                                 <div class="work-item">
                                     <div class="work-item__number">04</div>
                                     <div class="work-item__top">
@@ -338,7 +348,8 @@
                                 </div>
                             </div>
                             <!--item-->
-                            <div class="col-lg-4 work-item__wrapper d-flex justify-content-center">
+                            <div class="col-lg-4 work-item__wrapper d-xl-flex justify-content-xl-center">
+                                <svg class="work-item__line"><use xlink:href="#work-line"></use></svg>
                                 <div class="work-item">
                                     <div class="work-item__number">05</div>
                                     <div class="work-item__top">
@@ -353,7 +364,8 @@
                                 </div>
                             </div>
                             <!--item-->
-                            <div class="col-lg-4 work-item__wrapper d-flex justify-content-end">
+                            <div class="col-lg-4 work-item__wrapper d-xl-flex justify-content-xl-end">
+                                <svg class="work-item__line"><use xlink:href="#work-line"></use></svg>
                                 <div class="work-item">
                                     <div class="work-item__number">06</div>
                                     <div class="work-item__top">
@@ -383,7 +395,7 @@
         
                 <div class="row row-gap-15">
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">IT-сектор</div>
@@ -400,7 +412,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Финансовый сектор</div>
@@ -417,7 +429,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Ритейл и Е-СОМ</div>
@@ -433,7 +445,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Производство</div>
@@ -450,7 +462,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Девелопмент</div>
@@ -467,7 +479,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Логистика и Транспорт</div>
@@ -483,7 +495,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Стартапы и Научные предприятия</div>
@@ -500,7 +512,7 @@
                         </div>
                     </div>
                     <!--item -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="expert-item">
                             <div class="expert-item__in">
                                 <div class="expert-item__title">Медицина и Образование</div>
@@ -530,7 +542,7 @@
                         <div class="title-h2 closing__title">
                             <span>Помогаем закрывать<br>
                                 сложные вакансии</span>
-                            <button class="button" data-src="#popup-call" data-fancybox><span>Попробовать</span></button>
+                            <button class="button d-none d-md-inline-block" data-src="#popup-call" data-fancybox><span>Попробовать</span></button>
                         </div>
                         <div class="title-h3 text-green-yellow">и увеличивать<br>
                             скорость найма</div>
@@ -561,48 +573,50 @@
                         способом</div>
                 </div>
         
-                <div class="row">
-                    <div class="col-lg-4 offset-lg-1">
-                        <div class="feed-decor">
-                            <div class="feed-decor__title font-Bold title-h3">ИИ для HR</div>
-                            <img class="feed-decor__picture" src="assets/img/feed-book.png" alt="Book">
+                <div class="feed-wrapper">
+                    <div class="row">
+                        <div class="col-lg-4 offset-lg-1">
+                            <div class="feed-decor">
+                                <div class="feed-decor__title font-Bold title-h3">ИИ для HR</div>
+                                <img class="feed-decor__picture" src="assets/img/feed-book.png" alt="Book">
+                            </div>
                         </div>
-                    </div>
-                    <form class="col-lg-6 offset-lg-1">
-                        <div class="text1 title-mb-3 font-Medium">Выберите способ связи:</div>
-                        <div class="feed-radio__list title-mb-1">
-                            <label class="radio">
-                                <input type="radio" name="connection-type" checked>
-                                <span class="radio__text">
+                        <form class="col-lg-6 offset-lg-1">
+                            <div class="text1 title-mb-3 font-Medium">Выберите способ связи:</div>
+                            <div class="feed-radio__list title-mb-1">
+                                <label class="radio">
+                                    <input type="radio" name="connection-type" checked>
+                                    <span class="radio__text">
                                     <svg><use xlink:href="#feed-email"></use></svg>
                                     <span>Почта</span>
                                 </span>
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="connection-type">
-                                <span class="radio__text">
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="connection-type">
+                                    <span class="radio__text">
                                     <svg><use xlink:href="#feed-ws"></use></svg>
                                     <span>WhatsApp</span>
                                 </span>
-                            </label>
-                        </div>
+                                </label>
+                            </div>
         
-                        <div class="feed-input__wrapper title-mb-1">
-                            <input type="tel" class="form-input js-tel w-100" placeholder="Введите ваш телефон">
-                            <input type="email" class="form-input w-100" placeholder="Введите вашу почту">
+                            <div class="feed-input__wrapper title-mb-1">
+                                <input type="tel" class="form-input js-tel w-100" placeholder="Введите ваш телефон">
+                                <input type="email" class="form-input w-100" placeholder="Введите вашу почту">
         
-                            <label class="checkbox">
-                                <input type="checkbox" checked>
-                                <span class="checkbox__text">
-                                    <svg><use xlink:href="#check"></use></svg>
-                                    <span>Принимаю условия <a href="#" class="link-underline">политики конфиденциальности</a></span>
-                                </span>
-                            </label>
-                        </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span class="checkbox__text">
+                                        <svg><use xlink:href="#check"></use></svg>
+                                        <span>Принимаю условия <a href="#" class="link-underline">политики конфиденциальности</a></span>
+                                    </span>
+                                </label>
+                            </div>
         
-                        <button class="button w-100"><span>Получить презентацию</span></button>
+                            <button class="button w-100"><span>Получить презентацию</span></button>
         
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -742,8 +756,11 @@
                                         <img class="footer-logo__picture" src="assets/img/logo.png" alt="Logo">
                                         <div class="footer-logo__title text1 font-Medium">ООО «Цифра Лаб»</div>
             
-                                        <div class="mb-2">ИНН 9731004705</div>
-                                        <div>КПП 773101001</div>
+                                        <!-- check another block in mobile ver-->
+                                        <div class="d-none d-lg-block">
+                                            <div class="mb-2">ИНН 9731004705</div>
+                                            <div>КПП 773101001</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -1226,6 +1243,16 @@
                     <rect width="20" height="10" fill="white" transform="translate(38 32) rotate(180)"/>
                 </clipPath>
             </defs>
+        </symbol>
+    
+        <symbol id="burger" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="15" height="2" rx="1" fill="white"/>
+            <rect y="5" width="15" height="2" rx="1" fill="white"/>
+            <path d="M0 11C0 10.4477 0.447715 10 1 10H14C14.5523 10 15 10.4477 15 11C15 11.5523 14.5523 12 14 12H1C0.447715 12 0 11.5523 0 11Z" fill="white"/>
+        </symbol>
+        <symbol id="cross" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.4541" y="0.832733" width="30" height="3" rx="1.5" transform="rotate(45 2.4541 0.832733)" fill="white"/>
+            <rect width="30" height="3" rx="1.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 21.546 0.832733)" fill="white"/>
         </symbol>
     
     
