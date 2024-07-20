@@ -13,7 +13,7 @@
     margin-bottom: 20px;
     transform: translateX(-30px);
 
-    @include r($breakpoint-1) {
+    @include r(1320) {
       margin-bottom: 10px;
       max-height: 45px;
       width: auto;

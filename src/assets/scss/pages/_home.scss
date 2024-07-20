@@ -797,6 +797,12 @@
       transform: translateY(-50%);
       @include gradient-green-yellow;
       border-radius: 50%;
+
+
+      @include r($breakpoint-2) {
+        top: 0;
+        transform: translateY(0);
+      }
     }
   }
 
