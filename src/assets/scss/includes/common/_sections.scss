@@ -1,0 +1,21 @@
+@mixin section-pd-1 {
+  padding-top: 75px;
+  padding-bottom: 120px;
+}
+.section-pd-1 { @include section-pd-1; }
+
+.section-title {
+  svg {
+    margin-bottom: 20px;
+    transform: translateX(-30px);
+  }
+
+  .title-h2 {
+    @include font-Medium;
+    margin-bottom: 50px;
+    line-height: 1.1;
+  }
+  .title-h3 {
+    @include font-Bold;
+  }
+}

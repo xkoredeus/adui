@@ -1,0 +1,28 @@
+$font-Black: 'Gotham-Black';
+$font-XLight: 'Gotham-XLight';
+$font-Light: 'Gotham-Light';
+$font-Thin: 'Gotham-Thin';
+$font-Ultra: 'Gotham-Ultra';
+$font-Medium: 'Gotham-Medium';
+$font-Bold: 'Gotham-Bold';
+$font-Book: 'Gotham-Book';
+
+@mixin font-Black { font-family: $font-Black; }
+@mixin font-XLight { font-family: $font-XLight; }
+@mixin font-Light { font-family: $font-Light; }
+@mixin font-Thin { font-family: $font-Thin; }
+@mixin font-Ultra { font-family: $font-Ultra; }
+@mixin font-Medium { font-family: $font-Medium; }
+@mixin font-Bold { font-family: $font-Bold; }
+@mixin font-Book { font-family: $font-Book; }
+
+.font-Black { @include font-Black; }
+.font-XLight { @include font-XLight; }
+.font-Light { @include font-Light; }
+.font-Thin { @include font-Thin; }
+.font-Ultra { @include font-Ultra; }
+.font-Medium { @include font-Medium; }
+.font-Bold { @include font-Bold; }
+.font-Book { @include font-Book; }
+
+

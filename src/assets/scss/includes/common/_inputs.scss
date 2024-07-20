@@ -1,0 +1,34 @@
+input {
+  border: none;
+  outline: none;
+  box-shadow: unset;
+  background: none;
+  &:hover {
+    cursor: text;
+  }
+}
+
+.form-input {
+  color: $white;
+  @include font-Book;
+  padding: 26px 33px;
+  border-radius: 100px;
+  border: 1px solid $white;
+
+  &::placeholder {
+    color: $white;
+  }
+
+  &:focus {
+    border-color: $green;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

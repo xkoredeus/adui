@@ -1,0 +1,43 @@
+<div id="popup-call" class="popup__wrapper popup__wrapper-small" style="display: none">
+    <div class="popup__in">
+        <div class="popup-header">
+            <div class="popup-title">Введите данные:</div>
+        </div>
+
+        <div class="popup-content">
+            <div class="popup__fields">
+                <input type="text" class="form-input" placeholder="Ваше имя">
+                <input type="tel" class="form-input js-tel" placeholder="Ваш телефон">
+            </div>
+
+            {{> policy }}
+
+            <button class="button w-100"><span>Отправить запрос</span></button>
+        </div>
+
+    </div>
+</div>
+<div id="popup-success" class="popup__wrapper popup__wrapper-success popup__wrapper-small" style="display: none">
+    <div class="popup__in">
+        <div class="popup-header">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="popup-title">Ваш Запрос отправлен</div>
+                <button class="js-close-fancybox"><svg width="26" height="26" fill="#262626"><use xlink:href="#check-circle"></use></svg></button>
+            </div>
+
+        </div>
+
+        <div class="popup-content">
+            <div class="popup-success__in">
+                <div class="popup-feedback__title">
+                    Наш специалист <br>
+                    свяжется с вами <br>
+                    в ближайшее <br>
+                    время
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

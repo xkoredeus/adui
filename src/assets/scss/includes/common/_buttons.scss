@@ -1,0 +1,51 @@
+button {
+  border: none;
+  outline: none;
+  box-shadow: unset;
+  background: none;
+  padding: 0;
+}
+
+.button,
+a.button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  @include text2;
+  padding: 23.5px 42px;
+  border-radius: 100px;
+  @include ease-long;
+  @include font-Medium;
+  color: $dark;
+  overflow: hidden;
+  background-color: $green;
+  box-shadow: 0 20px 50px rgba(7, 33, 61, 0.4);
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before{
+    @include ovl;
+    @include ease-long;
+    @include gradient-light-green;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 25px rgba(7, 33, 61, 0.2);
+    &::before {
+      opacity: 0;
+    }
+  }
+}
+
+.link-underline {
+  color: currentColor;
+  border-bottom: 1px solid currentColor;
+
+  &:hover {
+    color: $green;
+    border-bottom-color: $green;
+  }
+}

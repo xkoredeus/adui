@@ -1,0 +1,26 @@
+.header-in {
+  @include font-Book;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header-soc__link {
+  &:hover {
+    opacity: .7;
+  }
+}

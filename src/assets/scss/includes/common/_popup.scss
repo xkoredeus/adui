@@ -1,0 +1,115 @@
+.popup__wrapper {
+  max-width: 545px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0;
+
+  &-small {
+    max-width: 435px;
+  }
+
+  &.fancybox-content {
+    background-color: $blue;
+  }
+}
+
+.popup-title {
+  padding-right: 10px;
+}
+
+.popup-header {
+  @include font-Medium;
+  padding: 25px 25px;
+  border-bottom: 1px solid #415461;
+
+  @include r($breakpoint-4) {
+    padding: 25px 15px;
+  }
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px 25px;
+  @include r($breakpoint-4) {
+    padding: 20px 15px;
+  }
+}
+
+.popup__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.fancybox-is-open .fancybox-bg {
+  background: $dark;
+  opacity: .9;
+}
+
+.popup-hide-close-button {
+  .fancybox-close-small {
+    display: none;
+  }
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  background-color: $tr;
+  border: 1px solid $white;
+  width: 26px;
+  height: 26px;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  color: $white;
+  padding: 2px;
+  @include ease;
+  opacity: 1;
+
+  &:hover {
+    color: $green;
+    border-color: $green;
+  }
+}
+
+.popup-feedback {
+  flex-grow: 1;
+
+  &__title {
+    width: 100%;
+    font-size: 36px;
+    color: #D9D9D9;
+    text-transform: uppercase;
+    @include font-Bold;
+    text-align: center;
+
+    @include r($breakpoint-3) {
+      font-size: 20px
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+  }
+  &__in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    height: 100%;
+  }
+
+  &__arrow {
+    width: 35px;
+    height: 35px;
+    margin-left: 40px;
+    svg {
+      fill: #D9D9D9;
+      transform: rotate(90deg);
+    }
+  }
+}

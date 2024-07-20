@@ -1,0 +1,38 @@
+$blue: #07213D;
+$dark: #262626;
+$tr: transparent;
+$white: #fff;
+$green: #06E7C3;
+
+$gradient-green-yellow-deg: linear-gradient(138.12deg, #00D1FF 0%, #D08D77 50%, #FFE600 100%);
+$gradient-green-yellow: linear-gradient(97.12deg, #00D1FF 0%, #D08D77 50%, #FFE600 100%);
+
+.text-green-yellow {
+  background: linear-gradient(97.12deg, #00D1FF 0%, #D08D77 50%, #FFE600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+@mixin gradient-green-yellow-deg {
+  background: $gradient-green-yellow-deg;
+}
+@mixin gradient-green-yellow {
+  background: $gradient-green-yellow;
+}
+@mixin gradient-light-green {
+  background: linear-gradient(90deg, #06E7C3 0%, #05D765 100%);
+};
+
+.gradinet-light-green {
+  @include gradient-light-green;
+}
+
+.color-white { color: $white; }
+.color-dark { color: $dark; }
+
+
+
+
