@@ -1,4 +1,9 @@
+.header {
+  position: relative;
+  z-index: 2;
+}
 .header-in {
+  position: relative;
   @include font-Book;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -6,21 +11,117 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+
+  @include r($breakpoint-1) {
+    padding-top: 30px;
+  }
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @include r($breakpoint-1) {
+    gap: 10px;
+
+    &__text {
+      font-size: 12px;
+    }
+
+    img {
+      width: 47px;
+      height: 40px;
+    }
+  }
+
+}
+
+.header.active {
+  .header-nav {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .header-nav {
   display: flex;
   gap: 30px;
+  @include ease;
+
+  @include r($breakpoint-1) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @include r($breakpoint-3) {
+    font-size: 13px;
+    gap: 10px
+  }
+  @include r(420) {
+    font-size: 12px;
+    gap: 7px;
+  }
 }
+
 
 .header-soc__link {
   &:hover {
     opacity: .7;
+  }
+
+
+  @include r($breakpoint-1) {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.burger {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  @include gradient-light-green;
+  box-shadow: 0 20px 50px rgba(7, 33, 61, 0.4);
+  border-radius: 50%;
+  display: none;
+
+  @include r($breakpoint-1) {
+    display: block;
+  }
+
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include ease;
+
+    &:last-child {
+      opacity: 0;
+    }
+  }
+
+  &.active {
+    svg {
+      &:first-child {
+        opacity: 0;
+      }
+      &:last-child {
+        opacity: 1;
+      }
+    }
   }
 }

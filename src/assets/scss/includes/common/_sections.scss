@@ -1,6 +1,10 @@
 @mixin section-pd-1 {
   padding-top: 75px;
   padding-bottom: 120px;
+
+  @include r($breakpoint-2) {
+    padding-bottom: 70px;
+  }
 }
 .section-pd-1 { @include section-pd-1; }
 
@@ -8,14 +12,50 @@
   svg {
     margin-bottom: 20px;
     transform: translateX(-30px);
+
+    @include r(1320) {
+      margin-bottom: 10px;
+      max-height: 45px;
+      width: auto;
+      transform: translateX(0);
+    }
   }
 
   .title-h2 {
     @include font-Medium;
     margin-bottom: 50px;
     line-height: 1.1;
+
+    @include r($breakpoint-1) {
+      margin-bottom: 30px;
+    }
   }
   .title-h3 {
     @include font-Bold;
+  }
+}
+.with-radial {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 1200px;
+    height: 1200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(150px);
+    border-radius: 50%;
+
+    @include r($breakpoint-1) {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 1;
   }
 }

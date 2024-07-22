@@ -9,13 +9,13 @@ $text3: 18px;
 $text4: 16px;
 $text5: 14px;
 
-@mixin title-h1 {font-size: $title-h1;}
-@mixin title-h2 {font-size: $title-h2;}
-@mixin title-h3 {font-size: $title-h3;}
+@mixin title-h1 {font-size: $title-h1; @include r($breakpoint-1) {font-size: 110px;}}
+@mixin title-h2 {font-size: $title-h2; @include r($breakpoint-1) {font-size: 38px;}}
+@mixin title-h3 {font-size: $title-h3; @include r($breakpoint-1) {font-size: 26px;}}
 
-@mixin text1 {font-size: $text1;}
+@mixin text1 {font-size: $text1; @include r($breakpoint-1) {font-size: 22px;}}
 @mixin text2 {font-size: $text2;}
-@mixin text25 {font-size: $text25;}
+@mixin text25 {font-size: $text25; @include r($breakpoint-2) {font-size: 18px;}}
 @mixin text3 {font-size: $text3;}
 @mixin text4 {font-size: $text4;}
 @mixin text5 {font-size: $text5;}
@@ -23,7 +23,7 @@ $text5: 14px;
 .title-h1 { @include title-h1 }
 .title-h2 { @include title-h2 }
 .title-h3 { @include title-h3 }
-.text1 { @include text1 }
+.text1 { @include text1; }
 .text2 { @include text2 }
 .text25 { @include text25 }
 .text3 { @include text3 }
@@ -33,6 +33,7 @@ $text5: 14px;
 
 .title-mb-0 {
   margin-bottom: 60px;
+  @include r($breakpoint-1) {margin-bottom: 50px;}
 }
 
 .title-mb-1 {
