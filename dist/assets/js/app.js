@@ -49,7 +49,8 @@ $(() => {
 $(() => {
     $('.js-toggle-menu').on('click', function () {
         $(this).toggleClass('active');
-        $('.header').toggleClass('active');
+        $('.header').toggleClass('active')
+        $('body').toggleClass('is-loading');
     });
 });
 // containers
@@ -59,7 +60,8 @@ $(() => {
 
         if (!container.is(e.target) && container.has(e.target).length === 0) {
             container.removeClass('active');
-            $('.burger').removeClass('active');
+            $('.burger').removeClass('active')
+            $('body').removeClass('active');
         }
     });
 });
