@@ -76,15 +76,6 @@
     }
   }
 
-  @include r($breakpoint-3) {
-    font-size: 13px;
-    gap: 10px
-  }
-  @include r(420) {
-    font-size: 12px;
-    gap: 7px;
-  }
-
   &__wrapper {
     @include r($breakpoint-1) {
       position: absolute;
